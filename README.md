@@ -55,7 +55,7 @@ npm install
 4. Configure environment variables:
 
 Create a `.env` file in your project root with:
-
+```
 VITE_FIREBASE_API_KEY=your_firebase_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_project_auth_domain
 VITE_FIREBASE_PROJECT_ID=your_project_id
@@ -63,7 +63,7 @@ VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 VITE_FIREBASE_APP_ID=your_app_id
 VITE_OMDB_API_KEY=your_omdb_api_key
-
+```
 5. Start the app:
 
 npm run dev
@@ -73,25 +73,25 @@ Open your browser at [http://localhost:5173](http://localhost:5173)
 ---
 
 ## Project Structure
-
+```
 /src
-/components
-- Layout.jsx # Main layout wrapper for pages
-- NavBar.jsx # Navigation bar component
-- PrivateRoute.jsx # Route wrapper that protects private routes
-- UserAvatar.jsx # User avatar component
-/pages
-- Favorites.jsx # Favorites list and removal
-- Login.jsx # User login form
-- Signup.jsx # User registration form
-- MovieDetail.jsx # Movie detail page with favorite toggle
-/contexts
-- AuthContext.jsx # Firebase auth context provider
-/firebase
-- favorites.js # Functions to add/remove/check favorites in Firestore
+  /components
+  - Layout.jsx # Main layout wrapper for pages
+  - NavBar.jsx # Navigation bar component
+  - PrivateRoute.jsx # Route wrapper that protects private routes
+  - UserAvatar.jsx # User avatar component
+  /pages
+  - Favorites.jsx # Favorites list and removal
+  - Login.jsx # User login form
+  - Signup.jsx # User registration form
+  - MovieDetail.jsx # Movie detail page with favorite toggle
+  /contexts
+  - AuthContext.jsx # Firebase auth context provider
+  /firebase
+  - favorites.js # Functions to add/remove/check favorites in Firestore
 App.jsx # Main app component with routes
 main.jsx # App entry point, rendering with ReactDOM
-
+```
 ---
 
 ## Usage
